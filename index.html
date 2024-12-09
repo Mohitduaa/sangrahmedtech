@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>SANGRAH MEDTECH</title>
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <div class="bg-[#087c7c] py-2">
+      <div class="mx-[20px] md:mx-[90px] flex md:justify-between items-center">
+        <div>
+          <h1 class="text-[16px] md:text-[34px] font-bold">SANGRAH MEDTECH</h1>
+        </div>
+        <div>
+          <ul class="hidden md:flex gap-10">
+            <li class="text-[16px] font-medium"><a href="/src/index.html">Home</a></li>
+            <li class="text-[16px] font-medium">IndiaMart Shop</li>
+          </ul>
+        </div>
+        <div class="flex px-2 py-1 border border-black rounded items-center gap-2">
+          <img class="h-[25px] w-[25px]" src="images/search.png" alt="Search" />
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search for a Product..."
+            class="outline-none bg-[#087c7c] placeholder-white"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Hero Section -->
+    <div
+      class="bg-cover md:bg-cover bg-no-repeat md:h-[316px]"
+      style="background-image: url('images/Rectangle.png');"
+    >
+      <div class="flex justify-center items-center">
+        <h1 class="text-[24px] md:text-[48px] font-bold md:mt-20">Sangrah Med-Tech Shop</h1>
+      </div>
+      <div class="flex justify-center items-center gap-4 py-2">
+        <ul class="flex justify-center items-center gap-2 text-center sm:text-left">
+          <li class="text-[16px] font-bold">Home</li>
+          <img class="h-[20px] w-[20px]" src="images/arrow.png" alt="Arrow" />
+          <li class="text-[16px] font-light">Shop</li>
+        </ul>
+      </div>
+    </div>
+    <!-- Hero Section End -->
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-1" id="cardContainer"></div>
+
+    <!-- Pagination -->
+    <div class="flex justify-center gap-5 mb-10" id="paginationContainer"></div>
+
+    <!-- Brand Section -->
+        <div class="bg-[#087c7c]   flex justify-center items-center flex-wrap shrink-0 gap-10 py-16">
+            <div class=" flex items-start gap-2">
+              <img src="images/award.png" alt="" />
+              <div>
+                <h1 class="text-[25px] font-semibold">Global Brands</h1>
+                <p class="text-white text-[20px] font-medium">
+                  supplied by top brands
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start gap-2">
+              <img src="images/guarantee.png" alt="" />
+              <div>
+                <h1 class="text-[25px] font-semibold">Warranty Protection</h1>
+                <p class="text-white text-[20px] font-medium">
+                  Covered across India
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start gap-2">
+              <img src="images/shipping.png" alt="" />
+              <div>
+                <h1 class="text-[25px] font-semibold">Global Shipping</h1>
+                <p class="text-white text-[20px] font-medium">To 15+ countries</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-2">
+              <img src="images/customer-support.png" alt="" />
+              <div>
+                <h1 class="text-[25px] font-semibold">24 / 7 Support</h1>
+                <p class="text-white text-[20px] font-medium">
+                  Dedicated support
+                </p>
+              </div>
+            </div>
+          </div>
+      <!-- Brand section complete -->
+    </div>
+    <!-- Footer -->
+    <div class="flex flex-wrap justify-around items-start py-10 mb-10 space-x-0 space-y-10 sm:space-y-0 px-5">
+        <div class="w-full sm:w-auto sm:max-w-[250px]">
+          <h1 class="text-[24px] font-bold mb-5">Sangrah Innovations</h1>
+          <p class="w-[230px] text-[16px] font-medium sm:max-w-[300px]">
+            128/65, E Block Kidwai Nagar<br />
+            Kanpur, Uttar Pradesh - 208011<br />
+            India
+          </p>
+        </div>
+        <div class="w-full sm:w-auto sm:max-w-[250px]">
+          <h1 class="text-[#9F9F9F] text-[16px] font-medium mb-5">Links</h1>
+          <ul>
+            <li class="mb-2 text-[16px] font-medium">Home</li>
+            <li class="mb-2 text-[16px] font-medium">IndiaMart Shop</li>
+          </ul>
+        </div>
+            <div class="w-full sm:w-auto sm:max-w-[250px]">
+          <h1 class="text-[#9F9F9F] text-[16px] font-medium mb-5">Help</h1>
+          <ul>
+            <li class="mb-2 text-[16px] font-medium">Payment Options</li>
+            <li class="mb-2 text-[16px] font-medium">Returns</li>
+            <li class="mb-2 text-[16px] font-medium">Privacy Policies</li>
+          </ul>
+        </div>
+        <div class="w-full sm:w-auto sm:max-w-[250px]">
+          <h1 class="text-[#9F9F9F] text-[16px] font-medium mb-5">Contact</h1>
+          <ul>
+            <li class="mb-2 text-[16px] font-medium">
+              Phone: +91-9305197201 <br />
+              Email: info@sangrahinnovations.com
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Footer content -->
+    </div>
+      <div class="bg-black h-[2px] md:mx-10"></div>
+      <h1 class="py-2 text-sm md:text-[16px] font-normal text-center">2024 Sangrah Innovations. All rights reserved</h1>
+  </body>
+</html>
