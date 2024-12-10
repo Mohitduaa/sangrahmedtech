@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="./output.css" rel="stylesheet" />
     <title>SANGRAH MEDTECH</title>
-    <script src="index.js" defer></script>
   </head>
   <body>
-    <!-- Navbar Start -->
+    <!-- navbaar start -->
     <div class="bg-[#087c7c] py-2">
       <div class="mx-[20px] md:mx-[90px] flex md:justify-between items-center">
         <div>
@@ -17,24 +17,15 @@
         </div>
         <div>
           <ul class="hidden md:flex gap-10">
-            <li class="text-[16px] font-medium"><a href="/src/index.html">Home</a></li>
+            <li class="text-[16px] font-medium"><a href="/index.html">Home</a></li>
             <li class="text-[16px] font-medium">IndiaMart Shop</li>
           </ul>
-        </div>
-        <div class="flex px-2 py-1 border border-black rounded items-center gap-2">
-          <img class="h-[25px] w-[25px]" src="images/search.png" alt="Search" />
-          <input
-            type="text"
-            id="searchInput"
-            placeholder="Search for a Product..."
-            class="outline-none bg-[#087c7c] placeholder-white"
-          />
-        </div>
+        </div>     
       </div>
     </div>
-    <!-- Navbar End -->
 
-    <!-- Hero Section -->
+    <!-- navbaar complete -->
+    <!-- second part start -->
     <div
       class="bg-cover md:bg-cover bg-no-repeat md:h-[316px]"
       style="background-image: url('images/Rectangle.png');"
@@ -50,90 +41,369 @@
         </ul>
       </div>
     </div>
-    <!-- Hero Section End -->
-
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-1" id="cardContainer"></div>
-
-    <!-- Pagination -->
-    <div class="flex justify-center gap-5 mb-10" id="paginationContainer"></div>
-
-    <!-- Brand Section -->
-        <div class="bg-[#087c7c]   flex justify-center items-center flex-wrap shrink-0 gap-10 py-16">
-            <div class=" flex items-start gap-2">
-              <img src="images/award.png" alt="" />
-              <div>
-                <h1 class="text-[25px] font-semibold">Global Brands</h1>
-                <p class="text-white text-[20px] font-medium">
-                  supplied by top brands
-                </p>
-              </div>
-            </div>
-            <div class="flex items-start gap-2">
-              <img src="images/guarantee.png" alt="" />
-              <div>
-                <h1 class="text-[25px] font-semibold">Warranty Protection</h1>
-                <p class="text-white text-[20px] font-medium">
-                  Covered across India
-                </p>
-              </div>
-            </div>
-            <div class="flex items-start gap-2">
-              <img src="images/shipping.png" alt="" />
-              <div>
-                <h1 class="text-[25px] font-semibold">Global Shipping</h1>
-                <p class="text-white text-[20px] font-medium">To 15+ countries</p>
-              </div>
-            </div>
-            <div class="flex items-start gap-2">
-              <img src="images/customer-support.png" alt="" />
-              <div>
-                <h1 class="text-[25px] font-semibold">24 / 7 Support</h1>
-                <p class="text-white text-[20px] font-medium">
-                  Dedicated support
-                </p>
-              </div>
-            </div>
-          </div>
-      <!-- Brand section complete -->
-    </div>
-    <!-- Footer -->
-    <div class="flex flex-wrap justify-around items-start py-10 mb-10 space-x-0 space-y-10 sm:space-y-0 px-5">
-        <div class="w-full sm:w-auto sm:max-w-[250px]">
-          <h1 class="text-[24px] font-bold mb-5">Sangrah Innovations</h1>
-          <p class="w-[230px] text-[16px] font-medium sm:max-w-[300px]">
-            128/65, E Block Kidwai Nagar<br />
-            Kanpur, Uttar Pradesh - 208011<br />
-            India
-          </p>
-        </div>
-        <div class="w-full sm:w-auto sm:max-w-[250px]">
-          <h1 class="text-[#9F9F9F] text-[16px] font-medium mb-5">Links</h1>
-          <ul>
-            <li class="mb-2 text-[16px] font-medium">Home</li>
-            <li class="mb-2 text-[16px] font-medium">IndiaMart Shop</li>
-          </ul>
-        </div>
-            <div class="w-full sm:w-auto sm:max-w-[250px]">
-          <h1 class="text-[#9F9F9F] text-[16px] font-medium mb-5">Help</h1>
-          <ul>
-            <li class="mb-2 text-[16px] font-medium">Payment Options</li>
-            <li class="mb-2 text-[16px] font-medium">Returns</li>
-            <li class="mb-2 text-[16px] font-medium">Privacy Policies</li>
-          </ul>
-        </div>
-        <div class="w-full sm:w-auto sm:max-w-[250px]">
-          <h1 class="text-[#9F9F9F] text-[16px] font-medium mb-5">Contact</h1>
-          <ul>
-            <li class="mb-2 text-[16px] font-medium">
-              Phone: +91-9305197201 <br />
-              Email: info@sangrahinnovations.com
-            </li>
-          </ul>
+    <!-- second part complete -->
+    <!-- third part start -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-1">
+      <div class="flex justify-start gap-10 py-10">
+        <div class="mx-8 border shadow-md rounded-lg px-4 py-2 ">
+          <img class="w-[285px] h-[301px]" src="images/img1.png" alt="${card.title}">
+          <h3 class="text-[24px] font-semibold pl-2">INOGEN ONE G5 Portable Oxygen Concentrator</h3>
+          <p class="text-[20px] font-semibold pl-2">  Rs.2,39,000</p>
         </div>
       </div>
-      <!-- Footer content -->
+      <div class="flex justify-start gap-10 py-10">
+        <div class="mx-8 border shadow-md rounded-lg px-4 py-2 ">
+          <img class="w-[285px] h-[301px]" src="images/img2.png" alt="${card.title}">
+          <h3 class="text-[24px] font-semibold pl-2">IGO2 Portable Oxygen Concentrator</h3>
+          <p class="text-[20px] font-semibold pl-2">Rs.2,00,000</p>
+        </div>
+      </div>
+      <div class="flex justify-start gap-10 py-10">
+        <div class="mx-8 border shadow-md rounded-lg px-4 py-2 ">
+          <img class="w-[285px] h-[301px]" src="images/img3.png" alt="${card.title}">
+          <h3 class="text-[24px] font-semibold pl-2">OXYMED P2 Portable Oxygen Concentrator</h3>
+          <p class="text-[20px] font-semibold pl-2">Rs.1,45,000</p>
+        </div>
+      </div>
+      <div class="flex justify-start gap-10 py-10">
+        <div class="mx-8 border shadow-md rounded-lg px-4 py-2 ">
+          <img class="w-[285px] h-[301px]" src="images/img4.png" alt="${card.title}">
+          <h3 class="text-[24px] font-semibold pl-2">Deckmount Portable Oxygen Concentrator</h3>
+          <p class="text-[20px] font-semibold pl-2">Rs.1,25,000</p>
+        </div>
+      </div>
+      <div class="flex justify-start gap-10 py-10">
+        <div class="mx-8 border shadow-md rounded-lg px-4 py-2 ">
+          <img class="w-[285px] h-[301px]" src="images/img5.png" alt="${card.title}">
+          <h3 class="text-[24px] font-semibold pl-2">Nareena Portable Oxygen Concentrator</h3>
+          <p class="text-[20px] font-semibold pl-2">Rs 1.37,000</p>
+        </div>
+      </div>
+      <div class="flex justify-start gap-10 py-10">
+        <div class="mx-8 border shadow-md rounded-lg px-4 py-2 ">
+          <img class="w-[285px] h-[301px]" src="images/img6.png" alt="${card.title}">
+          <h3 class="text-[24px] font-semibold pl-2">Oxymed 10 Litres Oxygen Concentrator </h3>
+          <p class="text-[20px] font-semibold pl-2">Rs.58,000</p>
+        </div>
+      </div>
+      <div class="flex justify-start gap-10 py-10">
+        <div class="mx-8 border shadow-md rounded-lg px-4 py-2 ">
+          <img class="w-[285px] h-[301px]" src="images/img7.png" alt="${card.title}">
+          <h3 class="text-[24px] font-semibold pl-2">Oxymed 5 Litres Oxygen Concentrator</h3>
+          <p class="text-[20px] font-semibold pl-2">Rs.40,000</p>
+        </div>
+      </div> <div class="flex justify-start gap-10 py-10">
+        <div class="mx-8 border shadow-md rounded-lg px-4 py-2 ">
+          <img class="w-[285px] h-[301px]" src="images/img8.png" alt="${card.title}">
+          <h3 class="text-[24px] font-semibold pl-2">Deckmount Gene O2 10 Litres Oxygen Concentrator</h3>
+          <p class="text-[20px] font-semibold pl-2">Rs.48,000</p>
+        </div>
+      </div> <div class="flex justify-start gap-10 py-10">
+        <div class="mx-8 border shadow-md rounded-lg px-4 py-2 ">
+          <img class="w-[285px] h-[301px]" src="images/img9.png" alt="${card.title}">
+          <h3 class="text-[24px] font-semibold pl-2">Philips 5 Litres Oxygen Concentrator</h3>
+          <p class="text-[20px] font-semibold pl-2">Rs.62,000</p>
+        </div>
+      </div> <div class="flex justify-start gap-10 py-10">
+        <div class="mx-8 border shadow-md rounded-lg px-4 py-2 ">
+          <img class="w-[285px] h-[301px]" src="images/img10.png" alt="${card.title}">
+          <h3 class="text-[24px] font-semibold pl-2">Devilbiss 5 Litres Oxygen Concentrator</h3>
+          <p class="text-[20px] font-semibold pl-2">Rs.57,000</p>
+        </div>
+      </div> <div class="flex justify-start gap-10 py-10">
+        <div class="mx-8 border shadow-md rounded-lg px-4 py-2 ">
+          <img class="w-[285px] h-[301px]" src="images/img11.png" alt="${card.title}">
+          <h3 class="text-[24px] font-semibold pl-2">Devilbiss 10  Litres Oxygen Concentrator</h3>
+          <p class="text-[20px] font-semibold pl-2">Rs.1,03,,000</p>
+        </div>
+      </div> <div class="flex justify-start gap-10 py-10">
+        <div class="mx-8 border shadow-md rounded-lg px-4 py-2 ">
+          <img class="w-[285px] h-[301px]" src="images/img12.png" alt="${card.title}">
+          <h3 class="text-[24px] font-semibold pl-2">BPL Oxy 5 Neo 5  Litres Oxygen Concentrator</h3>
+          <p class="text-[20px] font-semibold pl-2">Rs.32,500</p>
+        </div>
+      </div> <div class="flex justify-start gap-10 py-10">
+        <div class="mx-8 border shadow-md rounded-lg px-4 py-2 ">
+          <img class="w-[285px] h-[301px]" src="images/img13.png" alt="${card.title}">
+          <h3 class="text-[24px] font-semibold pl-2">BPL Oxy 10 Neo 10  Litres Oxygen Concentrator</h3>
+          <p class="text-[20px] font-semibold pl-2">Rs.1,12,000</p>
+        </div>
+      </div> <div class="flex justify-start gap-10 py-10">
+        <div class="mx-8 border shadow-md rounded-lg px-4 py-2 ">
+          <img class="w-[285px] h-[301px]" src="images/img14.png" alt="${card.title}">
+          <h3 class="text-[24px] font-semibold pl-2">BPL LifePAP 25 STA BiPAP machine</h3>
+          <p class="text-[20px] font-semibold pl-2">Rs 75,000</p>
+        </div>
+      </div> <div class="flex justify-start gap-10 py-10">
+        <div class="mx-8 border shadow-md rounded-lg px-4 py-2 ">
+          <img class="w-[285px] h-[301px]" src="images/img15.png" alt="${card.title}">
+          <h3 class="text-[24px] font-semibold pl-2">Philips DreamStation BiPAP Non Invasive Ventilator</h3>
+          <p class="text-[20px] font-semibold pl-2">Rs.63,500</p>
+        </div>
+      </div> <div class="flex justify-start gap-10 py-10">
+        <div class="mx-8 border shadow-md rounded-lg px-4 py-2 ">
+          <img class="w-[285px] h-[301px]" src="images/img16.png" alt="${card.title}">
+          <h3 class="text-[24px] font-semibold pl-2">Oxymed Airsmart Auto Bipap</h3>
+          <p class="text-[20px] font-semibold pl-2">Rs 45,000</p>
+        </div>
+      </div> <div class="flex justify-start gap-10 py-10">
+        <div class="mx-8 border shadow-md rounded-lg px-4 py-2 ">
+          <img class="w-[285px] h-[301px]" src="images/img17.png" alt="${card.title}">
+          <h3 class="text-[24px] font-semibold pl-2">Deckmount VT200 Auto Bipap</h3>
+          <p class="text-[20px] font-semibold pl-2">Rs 32,500</p>
+        </div>
+      </div> <div class="flex justify-start gap-10 py-10">
+        <div class="mx-8 border shadow-md rounded-lg px-4 py-2 ">
+          <img class="w-[285px] h-[301px]" src="images/img18.png" alt="${card.title}">
+          <h3 class="text-[24px] font-semibold pl-2">Deckmount VT60 auto Bipap Price</h3>
+          <p class="text-[20px] font-semibold pl-2">Rs.34,000</p>
+        </div>
+      </div> <div class="flex justify-start gap-10 py-10">
+        <div class="mx-8 border shadow-md rounded-lg px-4 py-2 ">
+          <img class="w-[285px] h-[301px]" src="images/img19.png" alt="${card.title}">
+          <h3 class="text-[24px] font-semibold pl-2">BMC YT30 auto BiPAP Price</h3>
+          <p class="text-[20px] font-semibold pl-2">Rs.34,500</p>
+        </div>
+      </div> <div class="flex justify-start gap-10 py-10">
+        <div class="mx-8 border shadow-md rounded-lg px-4 py-2 ">
+          <img class="w-[285px] h-[301px]" src="images/img20.png" alt="${card.title}">
+          <h3 class="text-[24px] font-semibold pl-2">BMC GIIS B25VT BiPAP</h3>
+          <p class="text-[20px] font-semibold pl-2">Rs.29,500</p>
+        </div>
+      </div> <div class="flex justify-start gap-10 py-10">
+        <div class="mx-8 border shadow-md rounded-lg px-4 py-2 ">
+          <img class="w-[285px] h-[301px]" src="images/img21.png" alt="${card.title}">
+          <h3 class="text-[24px] font-semibold pl-2">Ventmed DS8 Auto BiPAP</h3>
+          <p class="text-[20px] font-semibold pl-2">Rs.27,500</p>
+        </div>
+      </div> <div class="flex justify-start gap-10 py-10">
+        <div class="mx-8 border shadow-md rounded-lg px-4 py-2 ">
+          <img class="w-[285px] h-[301px]" src="images/img22.png" alt="${card.title}">
+          <h3 class="text-[24px] font-semibold pl-2">Topson BiPAP</h3>
+          <p class="text-[20px] font-semibold pl-2">Rs.26,500</p>
+        </div>
+      </div> <div class="flex justify-start gap-10 py-10">
+        <div class="mx-8 border shadow-md rounded-lg px-4 py-2 ">
+          <img class="w-[285px] h-[301px]" src="images/img23.png" alt="${card.title}">
+          <h3 class="text-[24px] font-semibold pl-2">BPL Prime CPAP</h3>
+          <p class="text-[20px] font-semibold pl-2">Rs. 37,000</p>
+        </div>
+      </div> <div class="flex justify-start gap-10 py-10">
+        <div class="mx-8 border shadow-md rounded-lg px-4 py-2 ">
+          <img class="w-[285px] h-[301px]" src="images/img24.png" alt="${card.title}">
+          <h3 class="text-[24px] font-semibold pl-2">Philips Dreamstation CPAP</h3>
+          <p class="text-[20px] font-semibold pl-2">Rs 49,000</p>
+        </div>
+      </div> <div class="flex justify-start gap-10 py-10">
+        <div class="mx-8 border shadow-md rounded-lg px-4 py-2 ">
+          <img class="w-[285px] h-[301px]" src="images/img25.png" alt="${card.title}">
+          <h3 class="text-[24px] font-semibold pl-2">ResMed AirSense Autoset CPAP</h3>
+          <p class="text-[20px] font-semibold pl-2">67,000</p>
+        </div>
+      </div> <div class="flex justify-start gap-10 py-10">
+        <div class="mx-8 border shadow-md rounded-lg px-4 py-2 ">
+          <img class="w-[285px] h-[301px]" src="images/img26.png" alt="${card.title}">
+          <h3 class="text-[24px] font-semibold pl-2">ResMed AirSense Autoset CPAP</h3>
+          <p class="text-[20px] font-semibold pl-2">67,000</p>
+        </div>
+      </div>
+      <div class="flex justify-start gap-10 py-10">
+        <div class="mx-8 border shadow-md rounded-lg px-4 py-2 ">
+          <img class="w-[285px] h-[301px]" src="images/img27.png" alt="${card.title}">
+          <h3 class="text-[24px] font-semibold pl-2">Oxymed SleepEasy CPAP</h3>
+          <p class="text-[20px] font-semibold pl-2">Rs.30,000</p>
+        </div>
+      </div> <div class="flex justify-start gap-10 py-10">
+        <div class="mx-8 border shadow-md rounded-lg px-4 py-2 ">
+          <img class="w-[285px] h-[301px]" src="images/img28.png" alt="${card.title}">
+          <h3 class="text-[24px] font-semibold pl-2">BMC RESmart GIIS A20 CPAP</h3>
+          <p class="text-[20px] font-semibold pl-2">Rs.22,500</p>
+        </div>
+      </div> <div class="flex justify-start gap-10 py-10">
+        <div class="mx-8 border shadow-md rounded-lg px-4 py-2 ">
+          <img class="w-[285px] h-[301px]" src="images/img29.png" alt="${card.title}">
+          <h3 class="text-[24px] font-semibold pl-2">Deckmount VT40 auto CPAP</h3>
+          <p class="text-[20px] font-semibold pl-2">Rs.27,500</p>
+        </div>
+      </div> <div class="flex justify-start gap-10 py-10">
+        <div class="mx-8 border shadow-md rounded-lg px-4 py-2 ">
+          <img class="w-[285px] h-[301px]" src="images/img30.png" alt="${card.title}">
+          <h3 class="text-[24px] font-semibold pl-2">Ventmed DS6 auto CPAP</h3>
+          <p class="text-[20px] font-semibold pl-2">Rs.25,000</p>
+        </div>
+      </div> <div class="flex justify-start gap-10 py-10">
+        <div class="mx-8 border shadow-md rounded-lg px-4 py-2 ">
+          <img class="w-[285px] h-[301px]" src="images/img31.png" alt="${card.title}">
+          <h3 class="text-[24px] font-semibold pl-2">Topson CPAP</h3>
+          <p class="text-[20px] font-semibold pl-2">Rs.22,500</p>
+        </div>
+      </div> <div class="flex justify-start gap-10 py-10">
+        <div class="mx-8 border shadow-md rounded-lg px-4 py-2 ">
+          <img class="w-[285px] h-[301px]" src="images/img32.png" alt="${card.title}">
+          <h3 class="text-[24px] font-semibold pl-2">BPL Cardiart  12 channel ECG 9108</h3>
+          <p class="text-[20px] font-semibold pl-2">Rs.1.13.000</p>
+        </div>
+      </div> <div class="flex justify-start gap-10 py-10">
+        <div class="mx-8 border shadow-md rounded-lg px-4 py-2 ">
+          <img class="w-[285px] h-[301px]" src="images/img33.png" alt="${card.title}">
+          <h3 class="text-[24px] font-semibold pl-2">BPL 9108 D 12 channel ECG</h3>
+          <p class="text-[20px] font-semibold pl-2">Rs.98,000</p>
+        </div>
+      </div> <div class="flex justify-start gap-10 py-10">
+        <div class="mx-8 border shadow-md rounded-lg px-4 py-2 ">
+          <img class="w-[285px] h-[301px]" src="images/img34.png" alt="${card.title}">
+          <h3 class="text-[24px] font-semibold pl-2">Philips PageWriter TC35 12 channel ECG</h3>
+          <p class="text-[20px] font-semibold pl-2">Rs.2,03,500</p>
+        </div>
+      </div> <div class="flex justify-start gap-10 py-10">
+        <div class="mx-8 border shadow-md rounded-lg px-4 py-2 ">
+          <img class="w-[285px] h-[301px]" src="images/img35.png" alt="${card.title}">
+          <h3 class="text-[24px] font-semibold pl-2">Philips PageWriter TC10 12 channel ECG</h3>
+          <p class="text-[20px] font-semibold pl-2">Rs.1,45,000</p>
+        </div>
+      </div> <div class="flex justify-start gap-10 py-10">
+        <div class="mx-8 border shadow-md rounded-lg px-4 py-2 ">
+          <img class="w-[285px] h-[301px]" src="images/img36.png" alt="${card.title}">
+          <h3 class="text-[24px] font-semibold pl-2">Clarity 12 channel ECG</h3>
+          <p class="text-[20px] font-semibold pl-2">Rs.75000</p>
+        </div>
+      </div> <div class="flex justify-start gap-10 py-10">
+        <div class="mx-8 border shadow-md rounded-lg px-4 py-2 ">
+          <img class="w-[285px] h-[301px]" src="images/img37.png" alt="${card.title}">
+          <h3 class="text-[24px] font-semibold pl-2">Mindray Beneheart R12 ECG</h3>
+          <p class="text-[20px] font-semibold pl-2">Rs.1,23,000</p>
+        </div>
+      </div> <div class="flex justify-start gap-10 py-10">
+        <div class="mx-8 border shadow-md rounded-lg px-4 py-2 ">
+          <img class="w-[285px] h-[301px]" src="images/img38.png" alt="${card.title}">
+          <h3 class="text-[24px] font-semibold pl-2">Tricog 12 channel ECG</h3>
+          <p class="text-[20px] font-semibold pl-2">Rs.75000</p>
+        </div>
+      </div> <div class="flex justify-start gap-10 py-10">
+        <div class="mx-8 border shadow-md rounded-lg px-4 py-2 ">
+          <img class="w-[285px] h-[301px]" src="images/img39.png" alt="${card.title}">
+          <h3 class="text-[24px] font-semibold pl-2">Tricog VCardia 12 channel ECG</h3>
+          <p class="text-[20px] font-semibold pl-2">Rs.55,000</p>
+        </div>
+      </div> <div class="flex justify-start gap-10 py-10">
+        <div class="mx-8 border shadow-md rounded-lg px-4 py-2 ">
+          <img class="w-[285px] h-[301px]" src="images/img40.png" alt="${card.title}">
+          <h3 class="text-[24px] font-semibold pl-2">Contec 12 channel ECG</h3>
+          <p class="text-[20px] font-semibold pl-2">Rs.52,000</p>
+        </div>
+      </div> <div class="flex justify-start gap-10 py-10">
+        <div class="mx-8 border shadow-md rounded-lg px-4 py-2 ">
+          <img class="w-[285px] h-[301px]" src="images/img41.png" alt="${card.title}">
+          <h3 class="text-[24px] font-semibold pl-2">BPL DF2509 Monophasic Defibrillator </h3>
+          <p class="text-[20px] font-semibold pl-2">Rs.125,000</p>
+        </div>
+      </div> <div class="flex justify-start gap-10 py-10">
+        <div class="mx-8 border shadow-md rounded-lg px-4 py-2 ">
+          <img class="w-[285px] h-[301px]" src="images/img42.png" alt="${card.title}">
+          <h3 class="text-[24px] font-semibold pl-2">BPL DF2617R Biphasic Defibrillators</h3>
+          <p class="text-[20px] font-semibold pl-2">Rs.2,15,000</p>
+        </div>
+      </div> <div class="flex justify-start gap-10 py-10">
+        <div class="mx-8 border shadow-md rounded-lg px-4 py-2 ">
+          <img class="w-[285px] h-[301px]" src="images/img43.png" alt="${card.title}">
+          <h3 class="text-[24px] font-semibold pl-2">PHILIPS AUTOMATED EXTERNAL DEFIBRILLATOR</h3>
+          <p class="text-[20px] font-semibold pl-2">Rs.1,18,560</p>
+        </div>
+      </div> <div class="flex justify-start gap-10 py-10">
+        <div class="mx-8 border shadow-md rounded-lg px-4 py-2 ">
+          <img class="w-[285px] h-[301px]" src="images/img44.png" alt="${card.title}">
+          <h3 class="text-[24px] font-semibold pl-2">Baxter Gambro Haemodialysis machine AK98</h3>
+          <p class="text-[20px] font-semibold pl-2">Rs.7,45,000</p>
+        </div>
+      </div> <div class="flex justify-start gap-10 py-10">
+        <div class="mx-8 border shadow-md rounded-lg px-4 py-2 ">
+          <img class="w-[285px] h-[301px]" src="images/img45.png" alt="${card.title}">
+          <h3 class="text-[24px] font-semibold pl-2">Philips Trilogy EV300 Ventilator Machine</h3>
+          <p class="text-[20px] font-semibold pl-2">Rs.6,75,000</p>
+        </div>
+      </div> 
+      
     </div>
-      <div class="bg-black h-[2px] md:mx-10"></div>
-      <h1 class="py-2 text-sm md:text-[16px] font-normal text-center">2024 Sangrah Innovations. All rights reserved</h1>
+    
+    
+    <!-- brand start -->
+    <div class="bg-[#087c7c]   flex justify-center items-center flex-wrap shrink-0 gap-10 py-16">
+      <div class=" flex items-start gap-2">
+        <img src="images/award.png" alt="" />
+        <div>
+          <h1 class="text-[25px] font-semibold">Global Brands</h1>
+          <p class="text-white text-[20px] font-medium">
+            supplied by top brands
+          </p>
+        </div>
+      </div>
+      <div class="flex items-start gap-2">
+        <img src="images/guarantee.png" alt="" />
+        <div>
+          <h1 class="text-[25px] font-semibold">Warranty Protection</h1>
+          <p class="text-white text-[20px] font-medium">
+            Covered across India
+          </p>
+        </div>
+      </div>
+      <div class="flex items-start gap-2">
+        <img src="images/shipping.png" alt="" />
+        <div>
+          <h1 class="text-[25px] font-semibold">Global Shipping</h1>
+          <p class="text-white text-[20px] font-medium">To 15+ countries</p>
+        </div>
+      </div>
+      <div class="flex items-start gap-2">
+        <img src="images/customer-support.png" alt="" />
+        <div>
+          <h1 class="text-[25px] font-semibold">24 / 7 Support</h1>
+          <p class="text-white text-[20px] font-medium">
+            Dedicated support
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- brand complete -->
+    <!-- fotter start -->
+    <div class="flex flex-wrap justify-around items-start py-10 mb-10 space-x-0 space-y-10 sm:space-y-0 px-5">
+      <div class="w-full sm:w-auto sm:max-w-[250px]">
+        <h1 class="text-[24px] font-bold mb-5">Sangrah Innovations</h1>
+        <p class="w-[230px] text-[16px] font-medium sm:max-w-[300px]">
+          128/65, E Block Kidwai Nagar<br />
+          Kanpur, Uttar Pradesh - 208011<br />
+          India
+        </p>
+      </div>
+      <div class="w-full sm:w-auto sm:max-w-[250px]">
+        <h1 class="text-[#9F9F9F] text-[16px] font-medium mb-5">Links</h1>
+        <ul>
+          <li class="mb-2 text-[16px] font-medium">Home</li>
+          <li class="mb-2 text-[16px] font-medium">IndiaMart Shop</li>
+        </ul>
+      </div>
+          <div class="w-full sm:w-auto sm:max-w-[250px]">
+        <h1 class="text-[#9F9F9F] text-[16px] font-medium mb-5">Help</h1>
+        <ul>
+          <li class="mb-2 text-[16px] font-medium">Payment Options</li>
+          <li class="mb-2 text-[16px] font-medium">Returns</li>
+          <li class="mb-2 text-[16px] font-medium">Privacy Policies</li>
+        </ul>
+      </div>
+      <div class="w-full sm:w-auto sm:max-w-[250px]">
+        <h1 class="text-[#9F9F9F] text-[16px] font-medium mb-5">Contact</h1>
+        <ul>
+          <li class="mb-2 text-[16px] font-medium">
+            Phone: +91-9305197201 <br />
+            Email: info@sangrahinnovations.com
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- fotter complete -->
+    <div class="py-10">
+      <div class="bg-black h-[2px] md:mx-10">
+        <h1 class="py-2 text-sm md:text-[16px] font-normal text-center">2024 Sangrah Innovations. All rights reverved</h1>
+      </div>
+    </div>
   </body>
 </html>
